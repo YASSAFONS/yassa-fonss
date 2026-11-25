@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yalla Gouna | يلا جونا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="yg-header">
+      <div class="container header-inner">
+        <a href="#top" class="header-logo-link">
+          <img src="logo.png" alt="Yalla Gouna" class="header-logo-circle">
+        </a>
+
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        class="mobile-menu-btn"
+        aria-label="Toggle Menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="#programs" data-i18n="nav_programs">البرامج</a>
+        <a href="#how-it-works" data-i18n="nav_how">كيف يعمل</a>
+        <a href="#booking" class="btn btn-sm btn-primary" data-i18n="nav_book">احجز الآن</a>
+
+        <div class="lang-switcher" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" data-lang="ar">العربية</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="de">DE</button>
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="hero-badge" data-i18n="hero_badge">الجونة • البحر الأحمر، مصر</span>
+        <h1 data-i18n="hero_title">اكتشف الجونة على طريقتك</h1>
+        <p data-i18n="hero_subtitle">
+          رحلات يومية، طلعات يخوت، أجواء سهر الويك إند، وإقامات مميزة مصممة لضيوف الغردقة وكل زوار الجونة.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary" data-i18n="hero_cta_book">احجز تجربتك</a>
+          <a href="#programs" class="btn btn-outline" data-i18n="hero_cta_programs">استعرض البرامج</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section programs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="programs_title">البرامج المميزة</h2>
+          <p data-i18n="programs_subtitle">اختار التجربة المناسبة لمودك وجدولك في الجونة.</p>
+        </div>
+
+        <div class="programs-grid">
+          <article class="program-card">
+            <span class="card-tag">01</span>
+            <h3 data-i18n="prog_roam_title">جولة حرة في الجونة</h3>
+            <p data-i18n="prog_roam_desc">
+              لف براحتك في المارينا والداون تاون وبرج الجولف مع ترشيحات لأحلى الأماكن والقهاوي وأماكن التصوير.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary full-width"
+              data-select-program="prog_roam_title"
+              data-i18n="prog_select_btn"
+            >
+              اختيار وحجز
+            </button>
+          </article>
+
+          <article class="program-card">
+            <span class="card-tag">02</span>
+            <h3 data-i18n="prog_yacht_title">رحلة يخت ودلافين اليوم الكامل</h3>
+            <p data-i18n="prog_yacht_desc">
+              إبحار في مياه البحر الأحمر الصافية مع فرصة مشاهدة الدلافين وزيارة الجزر والاستمتاع بيوم بحري متكامل.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary full-width"
+              data-select-program="prog_yacht_title"
+              data-i18n="prog_select_btn"
+            >
+              اختيار وحجز
+            </button>
+          </article>
+
+          <article class="program-card">
+            <span class="card-tag">03</span>
+            <h3 data-i18n="prog_night_title">سهرات الخميس والجمعة</h3>
+            <p data-i18n="prog_night_desc">
+              عيش طاقة الويك إند في الجونة مع أمسيات مميزة في أماكن مثل نويرة وأبرز سهرات الجونة.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary full-width"
+              data-select-program="prog_night_title"
+              data-i18n="prog_select_btn"
+            >
+              اختيار وحجز
+            </button>
+          </article>
+
+          <article class="program-card">
+            <span class="card-tag">04</span>
+            <h3 data-i18n="prog_villa_title">فيلات وإقامات ساحلية</h3>
+            <p data-i18n="prog_villa_desc">
+              استمتع بإقامة مريحة في فيلات ووحدات مختارة في الجونة للعائلات والأصدقاء ورحلات الويك إند.
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary full-width"
+              data-select-program="prog_villa_title"
+              data-i18n="prog_select_btn"
+            >
+              اختيار وحجز
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section how-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="how_title">خطوات الحجز</h2>
+          <p data-i18n="how_subtitle">خطوات بسيطة وسريعة وتنسيق مباشر معك.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <h3 data-i18n="step1_title">١. اختار البرنامج</h3>
+            <p data-i18n="step1_desc">حدد جولة حرة، رحلة يخت، سهرة ويك إند، أو إقامة فيلا.</p>
+          </div>
+          <div class="step-card">
+            <h3 data-i18n="step2_title">٢. سجل بياناتك</h3>
+            <p data-i18n="step2_desc">اكتب اسمك ورقم الواتساب والتاريخ المناسب وعدد الأفراد ومكان التحرك.</p>
+          </div>
+          <div class="step-card">
+            <h3 data-i18n="step3_title">٣. أكد على واتساب</h3>
+            <p data-i18n="step3_desc">ملخص الحجز بيتجهز فوراً على واتساب للتأكيد والتنسيق السريع.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+      <div class="container booking-wrapper">
+        <div class="section-header">
+          <h2 data-i18n="book_title">طلب حجز مباشر</h2>
+          <p data-i18n="book_subtitle">املأ بياناتك بالأسفل وهنرتب معك باقي التفاصيل مباشرة عبر واتساب.</p>
+        </div>
+
+        <form id="booking-form" class="booking-form">
+          <div class="form-group">
+            <label for="program-select" data-i18n="label_program">البرنامج المختار</label>
+            <select id="program-select" name="program" required>
+              <option value="prog_roam_title" data-i18n-option="prog_roam_title">جولة حرة في الجونة</option>
+              <option value="prog_yacht_title" data-i18n-option="prog_yacht_title">رحلة يخت ودلافين اليوم الكامل</option>
+              <option value="prog_night_title" data-i18n-option="prog_night_title">سهرات الخميس والجمعة</option>
+              <option value="prog_villa_title" data-i18n-option="prog_villa_title">فيلات وإقامات ساحلية</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-name" data-i18n="label_name">الاسم بالكامل</label>
+              <input type="text" id="client-name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="client-phone" data-i18n="label_phone">رقم الهاتف / واتساب</label>
+              <input type="tel" id="client-phone" name="phone" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-date" data-i18n="label_date">التاريخ المفضل</label>
+              <input type="date" id="client-date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="client-guests" data-i18n="label_guests">عدد الأفراد</label>
+              <input type="number" id="client-guests" name="guests" min="1" value="2" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="client-pickup" data-i18n="label_pickup">مكان التحرك (مثال: الغردقة / فندق / الجونة)</label>
+            <input type="text" id="client-pickup" name="pickup" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width" data-i18n="btn_confirm">
+            إرسال الطلب عبر واتساب
+          </button>
+        </form>
+
+        <div id="booking-confirmation" class="confirmation-box hidden">
+          <h3 data-i18n="confirm_title">ملخص الحجز جاهز</h3>
+          <p data-i18n="confirm_text">
+            تم تجهيز تفاصيل طلبك بالأسفل. إذا لم يفتح واتساب تلقائياً، اضغط على الزر للإرسال الآن.
+          </p>
+          <pre id="confirmation-summary" class="confirmation-summary"></pre>
+          <a
+            id="open-whatsapp-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            data-i18n="btn_open_wa"
+          >
+            افتح واتساب الآن
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a
+    id="floating-whatsapp"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-whatsapp"
+    aria-label="WhatsApp"
+  >
+    <span data-i18n="wa_general_chat">واتساب</span>
+  </a>
+<footer class="yg-footer yg-gouna-hero-footer">
+  <div class="yg-footer-scrim"></div>
+
+  <div class="container yg-footer-content">
+    <div class="yg-about-right-box">
+      <h2 class="yg-about-title-ar">من نحن</h2>
+      <p class="yg-about-body-ar">
+        يلا جونا هي شركتك السياحية في الجونة، نقدم لك تجربة سياحية متكاملة لعيش أجمل اللحظات في واحدة من أروع الوجهات في مصر. من الرحلات البحرية، إلى الجولات في المدينة، ومن المطاعم المميزة إلى الفعاليات والأنشطة المختلفة، هدفنا أن نجعلك تستمتع بكل ما تقدمه الجونة من جمال ورفاهية.
+      </p>
+    </div>
+
+    <div class="yg-brand-center-wrap">
+      <span class="yg-brand-blue-wide">Yalla Gouna</span>
+    </div>
+  </div>
+</footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
